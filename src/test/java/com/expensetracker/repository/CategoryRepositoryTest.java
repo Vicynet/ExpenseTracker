@@ -45,7 +45,7 @@ class CategoryRepositoryTest {
         log.info("Created Category Object -> "+ category);
         assertThat(category.getId()).isNull();
 
-        //save Category  object to database
+        //save Category object to database
         category = categoryRepository.save(category);
 
         log.info("After saving Category Object to database -> "+ category);
